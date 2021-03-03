@@ -350,7 +350,7 @@ h6 {
 .dropdown a {
   text-decoration: none;
 }
-.dropdown [data-toggle="dropdown"] {
+.dropdown [data-toggle=""] {
   position: relative;
   display: block;
   color: #fff;

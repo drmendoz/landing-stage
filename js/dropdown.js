@@ -4,7 +4,7 @@
 var dropdown = document.querySelectorAll('.dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
+	var button = el.querySelector('a[data-toggle=""]'),
 			menu = el.querySelector('.dropdown-nav'),
 			arrow = button.querySelector('i.icon-arrow'),
 			button_link = $(button).attr('href');

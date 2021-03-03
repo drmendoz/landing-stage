@@ -11,21 +11,24 @@ let enviarFormulario = (e) => {
     }
 
     var xhr = new XMLHttpRequest();
-    var url = "https://api.stagedanceinternational.com/api/v1/contactos";
+    var url = "http://localhost:8080/api/v1/contactos";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             alert('Formulario enviado correctamente')
-            document.getElementById('form').reset();
+            document.getElementById('contact-form').reset();
         }
     };
     try {
-
         xhr.send(JSON.stringify(data));
+        
     } catch (e) {
         alert('Error al enviar formulario')
     }
+
+    
+
 }
 
 let obtenerPaises = () => {
