@@ -7,11 +7,11 @@ let enviarFormulario = (e) => {
         email: email,
         nombre: nombre,
         pais: pais,
-        mensaje: mensaje
+        descripcion : mensaje
     }
 
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost8080.com/api/v1/contactos";
+    var url = "https://api.stagedanceinternational.com/api/v1/contactos";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function() {
@@ -29,7 +29,7 @@ let enviarFormulario = (e) => {
 }
 
 let obtenerPaises = () => {
-    fetch('http://localhost:8080/api/v1/paises').then(res =>
+    fetch('https://api.stagedanceinternational.com/api/v1/paises').then(res =>
         res.json()
     ).then(data => {
         const paisSelect = document.getElementById('pais');

@@ -1,7 +1,7 @@
 
 
 let obtenerTorneos = () => {
-    fetch('http://localhost:8080/api/v1/torneos?subTorneos=false').then(res =>
+    fetch('https://api.stagedanceinternational.com/api/v1/torneos?subTorneos=false').then(res =>
         res.json()
     ).then(data => {
         const torneodiv= document.getElementById("our-trainers")
