@@ -2707,6 +2707,32 @@ h6 {
   -webkit-transform: scale(1);
 }
 
+@media only screen and (max-width: 700px) {
+  .desaparecer {
+    display: none !important;
+  }
+  .inicias {
+    position: absolute !important;
+    right: 0.2rem !important;
+    top: 3rem !important;
+    padding: 0.6rem 0.4rem !important;
+  }
+  .logom {
+    position: absolute !important;
+    left: 1.4rem !important;
+    top: 2.5rem !important;
+    font-size: 12px !important;
+    margin-bottom: 2rem !important;
+  }
+  .espaciom {
+    padding-bottom: 1.4rem !important;
+  }
+}
+
+.celular {
+  font-size: 50px;
+}
+
 #botonc {
   background-color: #242424 !important;
 }
