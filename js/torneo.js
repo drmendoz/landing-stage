@@ -1,25 +1,23 @@
-
-
 let obtenerTorneos = () => {
-    fetch('https://api.stagedanceinternational.com/api/v1/torneos?subTorneos=false').then(res =>
-        res.json()
-    ).then(data => {
-        const torneodiv= document.getElementById("our-trainers")
-        for (let torneo of data) {
-            let nombreTorneo = torneo.nombre;
-            let paisTorneo = torneo.Pais.pais;
-            let ciudadTorneo = torneo.ciudad;
-            let fechafin;
-            let fechafinicioTorneo;
-            try{
-                fechafin= torneo.finInscripcion.split("T")[0];
-             fechafinicioTorneo=torneo.inicioTorneo.split("T")[0];
-            }catch(e){
-                 fechafin= "";
-                fechafinicioTorneo="";
-            }
-            
-            torneodiv.innerHTML+=`<div class="our-trainer-box col-md-6 col-sm-6 col-xs-12">
+  fetch("http://localhost:8080/api/v1/torneos?subTorneos=false")
+    .then((res) => res.json())
+    .then((data) => {
+      const torneodiv = document.getElementById("our-trainers");
+      for (let torneo of data) {
+        let nombreTorneo = torneo.nombre;
+        let paisTorneo = torneo.Pais.pais;
+        let ciudadTorneo = torneo.ciudad;
+        let fechafin;
+        let fechafinicioTorneo;
+        try {
+          fechafin = torneo.finInscripcion.split("T")[0];
+          fechafinicioTorneo = torneo.inicioTorneo.split("T")[0];
+        } catch (e) {
+          fechafin = "";
+          fechafinicioTorneo = "";
+        }
+
+        torneodiv.innerHTML += `<div class="our-trainer-box col-md-6 col-sm-6 col-xs-12">
             <div class="product-image-wrapper">
               <div class="product-content">
                 <div class="product-image product-trainer">
@@ -50,22 +48,14 @@ let obtenerTorneos = () => {
               </div>
             </div>
             </div>
-            `
-
-           
-        }
-    }).catch(e => {
-        alert('Error al obtener paises');
+            `;
+      }
+    })
+    .catch((e) => {
+      alert("Error al obtener paises");
     });
-
-}
-
-
-
-
-
-
+};
 
 document.addEventListener("DOMContentLoaded", () => {
-    obtenerTorneos();
-  });
+  obtenerTorneos();
+});
