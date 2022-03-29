@@ -81,6 +81,11 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
 div a:focus {
   color: #fff;
   text-decoration: none;
@@ -10268,4 +10273,21 @@ img.out-pos {
   text-align: center;
   line-height: 48px;
   margin: 15px 0 3px 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-item:hover {
+  color: yellow !important;
+  cursor: pointer;
 }
