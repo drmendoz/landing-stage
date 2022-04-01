@@ -86,6 +86,11 @@ img {
   src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
 div a:focus {
   color: #fff;
   text-decoration: none;

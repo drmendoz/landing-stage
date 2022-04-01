@@ -1,0 +1,29 @@
+.reglamento-container{
+    background-image:  url('../images/reglamento_fondo.jpg');
+    background-size: contain;
+    height: 100vh !important;
+    background-repeat: no-repeat;
+
+}
+
+.text-container{
+    padding-left: 70%;
+    padding-right: 30%;
+}
+
+.button-white{
+    background-color: white;
+    color: black;
+    font-family: 'poppins';
+    text-align: center !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 4px;
+}
+
+@media (min-width:600px) {
+    .text-container{
+        padding-top: 30vh;
+        padding-left: 40%;
+    }
+}
