@@ -46,12 +46,12 @@
   padding: 50px 120px 50px 120px;
 }
 
-.about-detail > h2,
+.about-detail > h3,
 p {
   color: #000;
 }
 
-.about-detail > h2 {
+.about-detail > h3 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -60,4 +60,37 @@ p {
 
 .about-detail > p {
   text-align: justify;
+  font-size: 15px;
+}
+
+.directors-letter {
+  background-color: black;
+  padding: 50px 120px 50px 120px;
+  position: relative;
+}
+
+.letter-content > p {
+  color: white;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.letter-header {
+  font-weight: bold;
+  text-transform: none;
+}
+
+.letter-img {
+  width: 100%;
+}
+
+.letter-img > img {
+  height: 50rem;
+}
+
+.copyright {
+  background: gray;
+  vertical-align: middle;
+  padding: 25px 120px 25px 120px;
+  font-size: 15px;
 }
