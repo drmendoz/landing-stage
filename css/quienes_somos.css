@@ -2,6 +2,10 @@
   background-color: white !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .team-header {
   background-color: #8d1400;
   color: white;
@@ -64,6 +68,7 @@ p {
 }
 
 .directors-letter {
+  display: flex;
   background-color: black;
   padding: 50px 120px 50px 120px;
   position: relative;
@@ -86,6 +91,7 @@ p {
 
 .letter-img > img {
   height: 50rem;
+  transform: translate(90%, 10%);
 }
 
 .copyright {
@@ -93,4 +99,36 @@ p {
   vertical-align: middle;
   padding: 25px 120px 25px 120px;
   font-size: 15px;
+}
+
+.media-icons {
+  font-size: 25px;
+}
+
+.quienes-somos-img {
+  width: 100%;
+  height: 88vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-us {
+    padding: 50px 60px 50px 60px;
+  }
+  .directors-letter {
+    padding: 50px 60px 50px 60px;
+    display: inline-block;
+  }
+  .letter-img {
+    display: none;
+  }
+  .copyright {
+    padding: 25px 40px 25px 40px;
+  }
+  .media-icons {
+    font-size: 18px;
+    display: inline;
+  }
+  .quienes-somos-img {
+    height: 100%;
+  }
 }
