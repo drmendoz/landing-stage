@@ -40,3 +40,24 @@
 .item-subtitle {
   text-align: center;
 }
+
+.about-us {
+  background-color: white;
+  padding: 50px 120px 50px 120px;
+}
+
+.about-detail > h2,
+p {
+  color: #000;
+}
+
+.about-detail > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-detail > p {
+  text-align: justify;
+}
