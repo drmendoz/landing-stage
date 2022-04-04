@@ -91,7 +91,7 @@ p {
 
 .letter-img > img {
   height: 50rem;
-  transform: translate(90%, 10%);
+  transform: translate(44vh, 10%);
 }
 
 .copyright {
