@@ -1,29 +1,52 @@
-.reglamento-container{
-    background-image:  url('../images/reglamento_fondo.jpg');
-    background-size: contain;
-    height: 100vh !important;
-    background-repeat: no-repeat;
-
+.reglamento-container {
+  background-image: url("../images/reglamento_fondo.jpg");
+  background-size: contain;
+  height: 100vh !important;
+  background-repeat: no-repeat;
+  padding-top: 15vh;
 }
 
-.text-container{
-    padding-left: 70%;
-    padding-right: 30%;
+.button-white {
+  background-color: white;
+  color: black;
+  font-family: "poppins";
+  width: 80%;
+  border-radius: 4px;
 }
 
-.button-white{
-    background-color: white;
-    color: black;
-    font-family: 'poppins';
-    text-align: center !important;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 4px;
+.reglamento-title {
+  font-family: "poppins";
+  font-weight: bolder;
+  font-size: 60px;
+  margin-bottom: 50px;
 }
 
-@media (min-width:600px) {
-    .text-container{
+.reglamento-description {
+  font-size: 30px;
+  text-align: center;
+}
+
+.reglamento-button {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .reglamento-title {
+    font-size: 30px !important;
+  }
+
+  .reglamento-description {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .reglamento-container {
+    padding-top: 20px;
+  }
+
+  /* .reglamento-text{
         padding-top: 30vh;
-        padding-left: 40%;
-    }
+        padding-left: 60%;
+    } */
 }
