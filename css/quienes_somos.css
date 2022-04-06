@@ -17,10 +17,20 @@ body {
   transform: translate(0, 50%);
 }
 
+.col-card {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .carrousel-img {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.team-carrousel {
+  height: 60vh;
+  background-color: white;
 }
 
 .item-name {

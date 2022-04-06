@@ -1,0 +1,23 @@
+.noticias {
+  height: 60vh;
+  background-color: #4a4a4a;
+  padding-top: 4rem;
+}
+
+.titulo-noticias {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.paises {
+  height: 60vh;
+  background-color: black;
+  padding-top: 4rem;
+}
+
+.auspiciantes {
+  height: 60vh;
+  background-color: white;
+  padding-top: 4rem;
+  color: black;
+}
