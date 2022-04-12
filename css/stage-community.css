@@ -1,0 +1,61 @@
+.stage-descripcion{
+    background: #2C398E;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descripcion-content{
+    padding: 5%;
+}
+
+.descripcion p{
+    font-size: 250%;
+    text-align: justify;
+}
+.stage-objetivos{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.objetivo{
+    padding: 5%;
+}
+
+.objetivo h4{
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+.objetivo p{
+    font-size: 200%;
+    text-align: justify;
+    color: black;
+}
+.copyright {
+    background: gray;
+    vertical-align: middle;
+    padding: 25px 120px 25px 120px;
+    font-size: 15px;
+}
+.media-icons {
+    font-size: 25px;
+  }
+  
+  .quienes-somos-img {
+    width: 100%;
+    height: 88vh;
+  }
+
+@media only screen and (max-width: 700px) {
+    .copyright {
+        padding: 25px 40px 25px 40px;
+      }
+}
