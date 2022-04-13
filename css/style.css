@@ -69,14 +69,13 @@
 /*---------------------------------------------------
 	COMMON STYLE
 ------------------------------------------------------*/
-*{
+* {
   box-sizing: content-box !important;
 }
 html body {
   font-size: 12px;
   line-height: 24px;
   font-weight: normal;
-  font-family: "Montserrat";
   background: none repeat scroll 0 0 #242424;
   color: #fff;
 }
@@ -89,7 +88,6 @@ img {
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
 }
 
-
 @font-face {
   font-family: "poppins";
   src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
@@ -99,7 +97,7 @@ img {
 @font-face {
   font-family: "poppins";
   src: url("../fonts/Poppins-Bold.ttf");
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 div a:focus {
@@ -111,7 +109,7 @@ div a,
 div a:hover {
   color: #fff;
   text-decoration: none;
-  font-family: "Montserrat";
+  cursor: pointer;
 }
 div a:hover {
   text-decoration: none;
