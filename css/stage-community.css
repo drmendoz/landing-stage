@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../fonts/Poppins-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.stage-descripcion {
+  background: #2c398e;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.descripcion-content {
+  padding: 8% 4% 8% 4%;
+}
+
+.descripcion p {
+  font-size: 275%;
+  line-height: 31px;
+  padding-right: 5rem;
+  text-align: justify;
+}
+.stage-objetivos {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.objetivo{
+  padding: 5%;
+}
+
+.objetivo-especifico{
+  padding-left: 0;
+}
+
+.objetivo h4 {
+  color: black;
+  font-size: 225%;
+  text-transform: capitalize;
+  padding-bottom: 1.5rem;
+}
+
+.objetivo p {
+  padding-right: 10%;
+  font-size: 250%;
+  line-height: 33px;
+  font-family: Poppins-Regular;
+  text-align: justify;
+  color: black;
+}
+.copyright {
+  background: gray;
+  vertical-align: middle;
+  padding: 50px 0 50px 70px;
+  font-size: 20px;
+}
+.media-icons {
+  font-size: 25px;
+}
+
+.quienes-somos-img {
+  width: 100%;
+  height: 88vh;
+}
+
+@media only screen and (max-width: 1370px) {
+  .stage-descripcion{
+    grid-template-columns: 1fr;
+  }
+
+  .descripcion p {
+    font-size: 200%;
+    padding-right: 0;
+  }
+
+  .objetivo p{
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .stage-descripcion{
+    grid-template-columns: 1fr;
+  }
+
+  .descripcion p {
+    font-size: 20px;
+    padding-right: 0;
+  }
+  
+  .objetivo{
+    padding: 5%;
+  }
+  .objetivo p{
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .stage-objetivos{
+    flex-direction: column;
+  }
+  .copyright {
+    font-size: 12px;
+    padding: 25px 40px 25px 40px;
+  }
+}
