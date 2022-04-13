@@ -117,7 +117,7 @@ p {
 
 .quienes-somos-img {
   width: 100%;
-  height: 88vh;
+  height: 100%;
 }
 
 @media only screen and (max-width: 700px) {
