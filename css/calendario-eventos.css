@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.banner {
+  height: 260px;
+}
+.banner-background {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-image: url("../images/calendario-eventos/banner.jpg");
+  background-size: cover;
+}
+
+.banner-background h4 {
+  padding: 5% 0 0 10%;
+  font-size: 50px;
+}
+
+.stage-calendario {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido-calendario {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4% 10% 4% 10%;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  width: 450px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.container h3 {
+  font-size: 400%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  width: 40%;
+}
+
+.container p {
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  overflow-wrap: normal;
+  padding: 0 25% 0 25%;
+}
+
+.year-calendar {
+  height: 650px;
+  width: 450px;
+  background-color: white;
+}
+
+.year-calendar p {
+  padding-bottom: 25px;
+  padding-top: 30px;
+  color: black;
+  flex-wrap: wrap;
+  font-size: 65px;
+  font-family: Poppins-ExtraLight;
+  text-transform: uppercase;
+}
+
+.year-calendar h4 {
+  margin: 0;
+  color: #b38919;
+  font-size: 325px;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 80%;
+}
+
+.copyright {
+  background: gray;
+  vertical-align: middle;
+  padding: 50px 0 50px 70px;
+  font-size: 20px;
+}
+.media-icons {
+  font-size: 25px;
+}
+
+.quienes-somos-img {
+  width: 100%;
+  height: 88vh;
+}
+
+@media only screen and (max-width: 1400px) {
+  .banner-background {
+    border-top: 1px solid white;
+  }
+  .banner-background h4 {
+    padding-left: 0;
+    padding-top: 12%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner-background h4 {
+    padding-top: 15%;
+  }
+
+  .container {
+    height: 450px;
+  }
+
+  .container h3 {
+    font-size: 35px;
+  }
+
+  .container p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .year-calendar {
+    height: 350px;
+  }
+
+  .year-calendar h4 {
+    font-size: 175px;
+  }
+
+  .year-calendar p {
+    padding: 0;
+    font-size: 3px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 25px 40px 25px 40px;
+  }
+}
