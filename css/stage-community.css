@@ -20,8 +20,8 @@
 }
 
 .descripcion p {
-  font-size: 275%;
-  line-height: 31px;
+  font-size: 1.8em;
+  line-height: 1.5em;
   padding-right: 5rem;
   text-align: justify;
 }
@@ -51,8 +51,8 @@
 
 .objetivo p {
   padding-right: 10%;
-  font-size: 250%;
-  line-height: 33px;
+  font-size: 1rem;
+  line-height: 1.2em;
   font-family: Poppins-Regular;
   text-align: justify;
   color: black;
