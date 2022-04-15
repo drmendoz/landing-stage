@@ -24,6 +24,7 @@
   line-height: 1.5em;
   padding-right: 5rem;
   text-align: justify;
+  hyphens: auto;
 }
 .stage-objetivos {
   background-color: white;
@@ -47,6 +48,7 @@
   font-size: 225%;
   text-transform: capitalize;
   padding-bottom: 1.5rem;
+  hyphens: auto;
 }
 
 .objetivo p {
@@ -93,15 +95,16 @@
   }
 
   .descripcion p {
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 0;
+   
   }
   
   .objetivo{
     padding: 5%;
   }
   .objetivo p{
-    font-size: 20px;
+    font-size: 13px;
     padding-right: 0;
   }
 
