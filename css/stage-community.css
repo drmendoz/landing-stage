@@ -58,6 +58,7 @@
   font-family: Poppins-Regular;
   text-align: justify;
   color: black;
+  hyphens: auto;
 }
 .copyright {
   background: gray;
@@ -80,12 +81,12 @@
   }
 
   .descripcion p {
-    font-size: 200%;
+    font-size: 1.5rem;
     padding-right: 0;
   }
 
   .objetivo p{
-    font-size: 200%;
+    font-size: 1rem;
   }
 }
 
