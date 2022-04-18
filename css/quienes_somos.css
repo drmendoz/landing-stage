@@ -74,25 +74,55 @@ p {
 
 .about-detail > p {
   text-align: justify;
-  font-size: 15px;
+  font-size: 2rem;
+  line-height: 1em;
+  hyphens: auto;
 }
 
 .directors-letter {
-  display: flex;
+  height: 100%;
+  width: 100%;
   background-color: black;
-  padding: 50px 120px 50px 120px;
   position: relative;
+}
+
+.director-background{
+  height: 1000px;  
+  width: 100vw;
+  background-position: center;
+  background-image: url("../images/quienes-somos/Recurso\ 2-100.jpg");
+  background-size: cover;
+}
+
+.letter-content{
+  padding: 5% 0 0 5%;
+  overflow-wrap: break-word;
 }
 
 .letter-content > p {
   color: white;
   text-align: justify;
-  font-size: 15px;
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  hyphens: auto;
 }
 
-.letter-header {
+.letter-header{
   font-weight: bold;
   text-transform: none;
+}
+
+.letter-title {
+  font-size: 62px;
+  font-weight: bold;
+  text-transform: none;
+  padding-bottom: 2%;
+}
+
+.letter-header h3{
+  font-size: 62px;
 }
 
 .letter-img {
@@ -117,20 +147,79 @@ p {
 
 .quienes-somos-img {
   width: 100%;
-  height: 88vh;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .letter-content > p {
+    font-size: 1.5rem;
+  }
+
+  .director-background{
+    position: relative;
+    background-position: left ;
+  }
+
+}
+  
+
+@media only screen and (max-width: 900px){
+  .letter-content{
+    width: auto;
+  }
+
+  .letter-title{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .letter-content p{
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+
+  .director-background{
+    height: auto;
+    background-image: none;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .about-us {
-    padding: 50px 60px 50px 60px;
+    padding: 50px 20px 50px 20px;
   }
   .directors-letter {
-    padding: 50px 60px 50px 60px;
+    height: auto;
+    padding: 50px 20px 50px 20px;
     display: inline-block;
+  }
+
+  .letter-title{
+    font-size: 30px;
+    
+  }
+
+  .letter-content{
+    padding: 0;
+  }
+
+  .letter-content > p {
+    font-size: 15px;
+
   }
   .letter-img {
     display: none;
   }
+
+  .mision-vision{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-detail{
+    width: 100%;
+  }
+
   .copyright {
     padding: 25px 40px 25px 40px;
   }

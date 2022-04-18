@@ -20,10 +20,11 @@
 }
 
 .descripcion p {
-  font-size: 275%;
-  line-height: 31px;
+  font-size: 1.8em;
+  line-height: 1.5em;
   padding-right: 5rem;
   text-align: justify;
+  hyphens: auto;
 }
 .stage-objetivos {
   background-color: white;
@@ -47,15 +48,17 @@
   font-size: 225%;
   text-transform: capitalize;
   padding-bottom: 1.5rem;
+  hyphens: auto;
 }
 
 .objetivo p {
   padding-right: 10%;
-  font-size: 250%;
-  line-height: 33px;
+  font-size: 1rem;
+  line-height: 1.2em;
   font-family: Poppins-Regular;
   text-align: justify;
   color: black;
+  hyphens: auto;
 }
 .copyright {
   background: gray;
@@ -78,12 +81,12 @@
   }
 
   .descripcion p {
-    font-size: 200%;
+    font-size: 1.5rem;
     padding-right: 0;
   }
 
   .objetivo p{
-    font-size: 200%;
+    font-size: 1rem;
   }
 }
 
@@ -93,15 +96,16 @@
   }
 
   .descripcion p {
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 0;
+   
   }
   
   .objetivo{
     padding: 5%;
   }
   .objetivo p{
-    font-size: 20px;
+    font-size: 13px;
     padding-right: 0;
   }
 
