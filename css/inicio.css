@@ -1,5 +1,4 @@
 .noticias {
-  height: 60vh;
   background-color: #4a4a4a;
   padding-top: 4rem;
 }
@@ -9,7 +8,7 @@
   text-align: center;
 }
 
-.background{
+.background {
   height: 100%;
   width: 100%;
   background-position: center;
@@ -18,14 +17,28 @@
   padding: 10rem 0 4rem 0;
 }
 
-.content-paises{
+.content-paises {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.content-paises img{
+.abanderados-carousel {
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.abanderados-header {
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 5rem;
+  position: relative;
+}
+
+.content-paises img {
   max-width: 27%;
 }
 
@@ -37,20 +50,16 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .paises h4{
+  .paises h4 {
     font-size: 3rem;
   }
 
-  
-  .content-paises{
+  .content-paises {
     flex-direction: column;
     align-items: center;
   }
 
-  .content-paises img{
+  .content-paises img {
     max-width: 50%;
   }
-
-  
 }
-
