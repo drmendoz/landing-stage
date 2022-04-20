@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>World Cup</title>
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="stage dance Championship, stage, dance, Championship" />
+    <meta name="description" content="Pagina de danzas Stage Dance Championship" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+    <link rel="icon" href="./images/LOGO-STAGE-SEPARADO-POR-CAPAS-_1_.png" />
+
+    <!--[if !IE 9]><!-->
+    <link rel="stylesheet" href="css/effect.css" type="text/css" />
+    <link rel="stylesheet" href="css/world-cup.css" type="text/css" />
+    <link rel="stylesheet" href="css/animation.css" type="text/css" />
+    <!--<![endif]-->
+    <link rel="stylesheet" href="css/masterslider.css" type="text/css" />
+    <link rel="stylesheet" href="css/ms-fullscreen.css" type="text/css" />
+    <link rel="stylesheet" href="css/world-cup.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/owl.transitions.css" />
+    <style>
+        h4 {
+            font-family: "poppins" !important;
+        }
+
+        body {
+            background: black !important;
+        }
+    </style>
+    <link rel="stylesheet" href="css/color.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="text-center" style="margin-top: 8px; margin-bottom: 25px;">
+            <a href="./index.html">
+
+                <img src="./images/stage-logo.png" alt="Logo stage" />
+            </a>
+        </div>
+        <div class="flex-container" style="justify-content: space-around;">
+            <div class="flex-item">
+                <a href="./quienes-somos.html">
+
+                    <h4 class="nav-item">¿Quiénes Somos?</h4>
+                </a>
+            </div>
+            <div class="flex-item">
+                <a href="./torneo.html">
+
+                    <h4 class="nav-item">Campeonatos nacionales</h4>
+                </a>
+            </div>
+            <div class="flex-item">
+                <a href="./reglamento.html">
+                    <h4 class="nav-item">Reglamento técnico</h4>
+                </a>
+            </div>
+            <div class="flex-item">
+                <a href="./world-cup.html">
+
+                    <h4 class="nav-item">World Cup</h4>
+                </a>
+            </div>
+            <div class="fle-item">
+                <a href="./stage-community.html">
+
+                    <h4 class="nav-item">Stage Community</h4>
+                </a>
+                </a>
+            </div>
+            <div class="flex-item">
+                <a href="./calendario-eventos.html">
+
+                    <h4 class="nav-item">Calendario de eventos</h4>
+                </a>
+            </div>
+            <div class="flex-item">
+                <a href="./contact-us.html">
+
+                    <h4 class="nav-item">Contáctanos</h4>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sect-worldcup">
+        <div id="myModal" class="modal">
+            <div class="modal-main">
+                <div class="close">
+                    <p id="close">X</p>
+                </div>
+                <video id="video-world" width="100%" height="100%" controls>
+                    <source src="https://storage.googleapis.com/recursos_stage/2022%20CANCUN.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="worldcup-content">
+            <img class="image-worldcup" onclick="abrirVideo()" src="./images/world-cup/Recurso-1.jpg" alt="...">
+            <img class="image-worldcup" onclick="abrirVideo()" src="./images/world-cup/Recurso-2.jpg" alt="...">
+        </div>
+
+    </section>
+
+    <footer class="copyright">
+        <div class="d-flex">
+            <div class="col-10 d-flex">
+                <div class="fw-bold">
+                    Stage Dance Championship. &nbsp;
+                </div>
+                <div>
+                    Todos los derechos reservados.
+
+                </div>
+            </div>
+            <div class="media-icons col-2 text-right">
+                <a class="fa fa-facebook px-1"></a>
+                <a class="fa fa-instagram px-1"></a>
+                <a class="fa fa-youtube-play px-1"></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var popup = document.getElementById("myModal");
+
+        var close = document.getElementById("close");
+
+        var video = document.getElementById("video-world");
+
+        function abrirVideo() {
+            popup.style.display = "block";
+            video.play();
+
+        }
+
+        close.onclick = function () {
+            popup.style.display = "none";
+            video.pause();
+
+        }
+    </script>
+
+</body>
+
+</html>
