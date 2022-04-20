@@ -101,11 +101,24 @@
         </div>
     </nav>
 
-    <section class="worldcup-content">
-        <img src="./images/world-cup/Recurso-1.jpg" class="d-block w-100 h-100" alt="...">
-        <img src="./images/world-cup/Recurso-2.jpg" class="d-block w-100 h-100" alt="...">
+    <section class="sect-worldcup">
+        <div id="myModal" class="modal">
+            <div class="modal-main">
+                <div class="close">
+                    <p id="close">X</p>
+                </div>
+                <video id="video-world" width="100%" height="100%" controls>
+                    <source src="https://storage.googleapis.com/recursos_stage/stage-community.MOV">
+                </video>
+            </div>
+        </div>
+        <div class="worldcup-content">
+            <img class="image-worldcup" onclick="abrirVideo()" src="./images/world-cup/Recurso-1.jpg" alt="...">
+            <img class="image-worldcup" onclick="abrirVideo()" src="./images/world-cup/Recurso-2.jpg" alt="...">
+        </div>
+
     </section>
-    
+
     <footer class="copyright">
         <div class="d-flex">
             <div class="col-10 d-flex">
@@ -125,6 +138,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        var popup = document.getElementById("myModal");
+
+        var close = document.getElementById("close");
+
+        var video = document.getElementById("video-world");
+
+        function abrirVideo(){
+            popup.style.display = "block";
+            video.play();
+
+        }
+
+        close.onclick = function (){
+            popup.style.display = "none";
+            video.pause();
+            
+        }
+    </script>
+
 </body>
 
 </html>
